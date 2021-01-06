@@ -13,10 +13,10 @@ var player2 = "Player 2";
     // Function to change the player name 
     function editNames() { 
         player1 = prompt("Change Player1 name"); 
-        player2 = prompt("Change player2 name"); 
+        
   
-        document.querySelector("p.Player1").innerHTML = player1; 
-        document.querySelector("p.Player2").innerHTML = player2; 
+       var P1 = document.querySelector("p.Player1").innerHTML = player1; 
+        
     } 
   
     // canvas + creating grid
@@ -189,7 +189,13 @@ var player2 = "Player 2";
 
         function nextMove() 
         {
+            
+
             var newMove = GenerateRandomNumber(6);
+
+            document.querySelector(".img1").setAttribute("src", 
+                "dice" + newMove + ".png"); //ji-23
+                
             alert("You got : " + newMove);
 
             _currentPos = _currentPos + newMove;
@@ -276,7 +282,7 @@ var player2 = "Player 2";
                 console.log(_currentPos + "if")
                 var audio = new Audio('audio/crowdhomerunapplause.wav');
                 audio.play();
-                alert("Congratulations, you have won the game :)");
+                alert("Congratulations , you have won the game :)");
                 
             }
             
