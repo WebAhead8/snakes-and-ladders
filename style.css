@@ -57,7 +57,7 @@ body {
     #screen1{
         width:800px;
         height:600px;
-        background:url(/img/backgrond1.jpg) no-repeat;
+        background:url(img/backgrond1.jpg) no-repeat;
         background-size: 800px 600px;
         position: relative;
     }

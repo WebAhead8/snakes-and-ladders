@@ -80,32 +80,76 @@ var squares = new Array();
 
         function RenderSnakeAndLadders()
         {
+            
             var img = new Image();
             img.onload = function () 
             {
-            context.drawImage(img, 66, 23);
+            context.drawImage(img, 66, 10); // 99 - 84
             };
-            img.src = "Images/SnakeA.gif";
-
+            img.src = "img/snakes/ludoSnake5.png";
+            
             var img1 = new Image();
             img1.onload = function () 
             {
-            context.drawImage(img1, 66, 166);
+            context.drawImage(img1, 66, 175);
             };
-            img1.src = "Images/SnakeB.gif";
-
+            img1.src = "img/snakes/ludoSnake7.png"; // 59 - 44
+            
             var img2 = new Image();
-            img2.onload = function () {
-                context.drawImage(img2, 57, 166);
+            img2.onload = function () 
+            {
+            context.drawImage(img2, 275, 150);
             };
-            img2.src = "Images/LadderA.gif";
+            img2.src = "img/snakes/ludoSnake10.png"; // 67- 31
 
             var img3 = new Image();
             img3.onload = function () 
             {
-                context.drawImage(img3, 322, 366);
+            context.drawImage(img3, 262, 280);
             };
-            img3.src = "Images/LadderA.gif";            
+            img3.src = "img/snakes/ludoSnake12.png"; // 34 - 7
+
+            var img4 = new Image();
+            img4.onload = function () 
+            {
+            context.drawImage(img4, 72, 50);
+            };
+            img4.src = "img/snakes/ludoSnake13.png"; // 86 - 39
+
+            var img5 = new Image();
+            img5.onload = function () {
+                context.drawImage(img5, 50, 215);
+            };
+            img5.src = "img/ladders/ladder14.png"; // 22 - 44
+
+            var img6 = new Image();
+            img6.onload = function () 
+            {
+                context.drawImage(img6, 105, 90);
+            };
+            img6.src = "img/ladders/ladder15.png"; // 64 - 78 
+
+            var img7 = new Image();
+            img7.onload = function () 
+            {
+                context.drawImage(img7, 182, 270);
+            };
+            img7.src = "img/ladders/ladder2.png"; // 5- 35   
+
+            var img8 = new Image();
+            img8.onload = function () 
+            {
+                context.drawImage(img8, 350, 20);
+            };
+            img8.src = "img/ladders/ladder7.png";  // 72 - 92 
+
+            var img9 = new Image();
+            img9.onload = function () 
+            {
+                context.drawImage(img9, 269, 175);
+            };
+            img9.src = "img/ladders/ladder12.png";  // 48 - 54 
+            
         }
 
         function initGame() 
@@ -163,3 +207,6 @@ var squares = new Array();
                 initGame();
             }
         }
+
+        
+        
