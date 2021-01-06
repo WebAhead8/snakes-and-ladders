@@ -75,24 +75,28 @@
 
 
                     <!-- adding choose player code -->
+                    
+            <div class="control-container">     
+                     
+                <div class ="dice-container">
                     <div class="dice"> 
-                        <p class="Player">Player 1</p>
-                        <img class ="players" src="img/p(1).png" >  
+                        <p class="Player1">Player 1</p>
+                        <img class ="players" src="img/m-avatar-1.png" >  
                         
                     </div> 
                 
                     <div class="dice"> 
-                        <p class="Player">Player 2</p> 
-                        <img class ="players" src="img/p(2).png">  
+                        <p class="Player2">Player 2</p> 
+                        <img class ="players" src="img/f-avatar-4.jpg">  
                         
-                    </div> 
-
-                    <div class="player's button" > 
+                    </div> <!--dice container-->
+                </div>
+                    <div class="player-button" > 
                         <button type="button" class="butn" onClick="editNames()"> 
                             Set Players Names 
                         </button> 
                     </div> 
-
+            </div> <!--control container-->
                     <footer>
                         <div class="screen3_footer">
                             <div id="start" onclick="nextscreen('screen3', 'screen4');" class="startBtn3">Let's Play </div>
@@ -112,14 +116,33 @@
                     
                     <header>
                         <!-- <div class="snakes-1"></div> -->
+                        <div class ="dice-container">
+                            <div class="dice"> 
+                                <p class="Player1">Player 1</p>
+                                <img class ="players" src="img/m-avatar-1.png" >  
+                                
+                            </div> 
+                        
+                            <div class="dice"> 
+                                <p class="Player2">Player 2</p> 
+                                <img class ="players" src="img/f-avatar-4.jpg">  
+                                
+                            </div> 
+                            <div class="next-button">
+                                <input type="button" id="nextMove" value="Next Move" onclick="nextMove()" />
+                            </div>
+                        </div> 
                     </header> <!-- screen4 header-->
                     <div class="clear"></div>
-                    <canvas id="board" width="420" height="420" style="border:1px solid #000000;">
-                    </canvas>
+                    <div class="canvas-players-container">
 
-                   
+                    
+                        <canvas id="board" width="420" height="420" style="border:1px solid #000000;">
+                        </canvas>
+
+                        
                 
-
+                    </div><!-- canvas-players-container div-->
                     <footer>
                         <div class="screen4_footer">
                             <div id="start" onclick="nextscreen('screen4', 'screen1');" class="startBtn4">play again </div>
@@ -130,9 +153,8 @@
                         </div>
                     </footer> <!--screen 4 footer-->
                     
-                <input type="button" value="Start a new game" onclick="initGame()" />
-                </br>
-                <input type="button" id="nextMove" value="Next Move" onclick="nextMove()" />
+                
+                
 
                 </div> <!-- end of div screen4--> 
 

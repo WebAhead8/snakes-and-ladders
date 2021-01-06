@@ -193,63 +193,100 @@ var player2 = "Player 2";
             alert("You got : " + newMove);
 
             _currentPos = _currentPos + newMove;
+            var audio = new Audio('audio/Switch3.mp3');
+            audio.play();
 
             switch (_currentPos) 
             {
             //ladder
             case 5:
             _currentPos = 35;
+            var audio = new Audio('audio/correct.mp3');
+            audio.play();
+            alert("yahoo you got a shortcut");
             break;
             //ladder
             case 22:
             _currentPos = 44;
+            var audio = new Audio('audio/correct.mp3');
+            audio.play();
+            alert("yahoo you got a shortcut");
             break;
             //ladder
             case 48:
             _currentPos = 54;
+            var audio = new Audio('audio/correct.mp3');
+            audio.play();
+            alert("yahoo you got a shortcut");
             break;
             //ladder
             case 64:
-            _currentPos = 78
+            _currentPos = 78;
+            var audio = new Audio('audio/correct.mp3');
+            audio.play();
+            alert("yahoo you got a shortcut");
             break;
             //ladder
             case 72:
             _currentPos = 92;
+            var audio = new Audio('audio/correct.mp3');
+            audio.play();
+            alert("yahoo you got a shortcut");
             break;
             //snake
             case 34:
             _currentPos = 7;
+            var audio = new Audio('audio/PUNCH.mp3');
+            audio.play();
+            alert("ops its a snake head");
             break;
             //snake
             case 59:
             _currentPos = 44;
+            var audio = new Audio('audio/PUNCH.mp3');
+            audio.play();
+            alert("ops its a snake head");
             break;
             //snake
             case 67:
             _currentPos = 31;
+            var audio = new Audio('audio/PUNCH.mp3');
+            audio.play();
+            alert("ops its a snake head");
             break;
             //snake
             case 86:
             _currentPos = 39;
+            var audio = new Audio('audio/PUNCH.mp3');
+            audio.play();
+            alert("ops its a snake head");
             break;
             //snake
             case 99:
             _currentPos = 84;
+            var audio = new Audio('audio/PUNCH.mp3');
+            audio.play();
+            alert("ops its a snake head");
             break;             
             }
 
-            var coorintaes = squares[_currentPos];
-            var coorintaes1 = squares[_currentPos];
-            coorintaes = coorintaes.split(',');
-            // console.log(_currentPos)
-            // console.log(coorintaes)
-            context.fillRect(coorintaes[0], coorintaes[1], squareSize, squareSize);
-            // context.fillStyle = colorA;
-            // context.fillRect(coorintaes1[0], coorintaes1[1], squareSize, squareSize);
-            
-            if (_currentPos == 100)
+            console.log(_currentPos)           
+            if (_currentPos >= 100)
             {
+                console.log(_currentPos + "if")
+                var audio = new Audio('audio/crowdhomerunapplause.wav');
+                audio.play();
                 alert("Congratulations, you have won the game :)");
-                initGame();
+                
             }
+            
+            var coorintaes = squares[_currentPos];
+            
+            coorintaes = coorintaes.split(',');
+            
+            context.fillRect(coorintaes[0], coorintaes[1], 20, 20);
+            alert("Your current possition : " + _currentPos);
+
+           
+            
         }
