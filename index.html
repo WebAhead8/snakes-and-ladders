@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="HTML5 Game" />
+        <meta property="og:title" content="Snakes and Ladders Game" />
+        <meta property="og:description" content="This is Snakes and Ladders jump game made in HTML5." />
+        <meta property="og:site_name" content="Snakes and Ladders jump Game" />
+        <meta property="author" content="DigiTopper" />   
+        <meta name="viewport" content="width=800, user-scalable=yes, initial-scale=1, maximum-scale=1" />
+        <title>Snakes & Ladders</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="container">
+                <!-- screen1  start section -->
+                <div id ="screen1">
+                    <header>
+                        <div class="snakes-1"></div>
+                        <div id="logo1"><h1>SNAKES <span>AND</span> LADDERS</h1></div>
+                    </header> <!-- screen1 header-->
+                    <div class="clear"></div>
+                    <footer>
+                        <div class="screen1_footer">
+                            <div id="start" onclick="nextscreen('screen1', 'screen2');" class="startBtn1"><span>START</span> </div>
+                            <div class="bottom-grass">
+                                <div class="grass-1"></div>
+                                <div class="grass-2"></div>
+                            </div> 
+                        </div>
+                    </footer> <!--screen 1 footer-->
+                </div> <!-- end of div screen1-->  
+                <!-- end of screen1 start section -->
+
+                <!-- screen2 instructions section -->
+                <div id ="screen2" style="display:none">
+                    <header>
+                        <div class="snakes-1"></div>
+                        <div id="instructions">
+                            <h2>Instructions</h2>
+                            <div class="inst_text">
+                                <ul>
+                                    <li>This game is suitable for all ages.</li>
+                                    <li>You can play against he computer or with friends.</li>
+                                    <li>up to two players</li>
+                                    <li>write your name and choose an avatar then press start game</li>
+                                    <li>first one who gets to ceel number 100 wins</li>
+                                </ul>
+                            </div> <!--inst_text div-->
+    
+                        </div> <!-- instructions div-->
+                    </header> <!-- screen2 header-->
+                    <div class="clear"></div>
+                    <footer>
+                        <div class="screen2_footer">
+                            <div id="start" onclick="nextscreen('screen2', 'screen3');" class="startBtn2"><span>Play</span> </div>
+                            <div class="bottom-grass">
+                                <div class="grass-1"></div>
+                                <div class="grass-2"></div>
+                            </div> 
+                        </div>
+                    </footer> <!--screen 2 footer-->
+                </div> <!-- end of div screen2-->  
+                <!-- end of screen2 instrrctions section -->
+                
+                <!-- screen 3 players info-->
+                <div id ="screen3">
+                    <header>
+                        <div class="snakes-1"></div>
+                        <div id="logo3"><h1>choose a player</h1></div>
+                    </header> <!-- screen3 header-->
+                    <div class="clear"></div>
+
+                    <footer>
+                        <div class="screen3_footer">
+                            <div id="start" onclick="nextscreen('screen3', 'screen4');" class="startBtn3">Let's Play </div>
+                            <div class="bottom-grass">
+                                <div class="grass-1"></div>
+                                <div class="grass-2"></div>
+                            </div> 
+                        </div>
+                    </footer> <!--screen 1 footer-->
+                </div> <!-- end of div screen3--> 
+
+                <!-- end of screen 3 players info-->
+
+                <!-- screen 4 grid table-->
+
+                <div id ="screen4">
+                    
+                    <header>
+                        <!-- <div class="snakes-1"></div> -->
+                    </header> <!-- screen4 header-->
+                    <div class="clear"></div>
+                    <canvas id="board" width="400" height="400" style="border:1px solid #000000;">
+                    </canvas>
+
+                   
+                
+
+                    <footer>
+                        <div class="screen4_footer">
+                            <div id="start" onclick="nextscreen('screen4', 'screen1');" class="startBtn4">play again </div>
+                            <div class="bottom-grass4">
+                                <div class="grass-14"></div>
+                                <div class="grass-24"></div>
+                            </div> 
+                        </div>
+                    </footer> <!--screen 4 footer-->
+                </div> <!-- end of div screen4--> 
+
+            </div> <!--div container-->
+        </div> <!-- div wrapper-->
+        <script type="text/javascript" src="scetch.js"></script>
+    </body>
+</html>
