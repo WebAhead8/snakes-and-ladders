@@ -131,7 +131,6 @@ var player2 = "Player 2";
             img4.onload = function () 
             {
             context.drawImage(img4, 72, 50);
-<<<<<<< HEAD
             };
             img4.src = "img/snakes/ludoSnake13.png"; // 86 - 39
 
@@ -167,43 +166,6 @@ var player2 = "Player 2";
             {
                 context.drawImage(img9, 269, 175);
             };
-=======
-            };
-            img4.src = "img/snakes/ludoSnake13.png"; // 86 - 39
-
-            var img5 = new Image();
-            img5.onload = function () {
-                context.drawImage(img5, 50, 215);
-            };
-            img5.src = "img/ladders/ladder14.png"; // 22 - 44
-
-            var img6 = new Image();
-            img6.onload = function () 
-            {
-                context.drawImage(img6, 105, 90);
-            };
-            img6.src = "img/ladders/ladder15.png"; // 64 - 78 
-
-            var img7 = new Image();
-            img7.onload = function () 
-            {
-                context.drawImage(img7, 182, 270);
-            };
-            img7.src = "img/ladders/ladder2.png"; // 5- 35   
-
-            var img8 = new Image();
-            img8.onload = function () 
-            {
-                context.drawImage(img8, 350, 20);
-            };
-            img8.src = "img/ladders/ladder7.png";  // 72 - 92 
-
-            var img9 = new Image();
-            img9.onload = function () 
-            {
-                context.drawImage(img9, 269, 175);
-            };
->>>>>>> abc6cdac7a29de62236bdd2970525b4e46b3bb39
             img9.src = "img/ladders/ladder12.png";  // 48 - 54 
             
         }
@@ -291,9 +253,3 @@ var player2 = "Player 2";
                 initGame();
             }
         }
-<<<<<<< HEAD
-=======
-
-        
-        
->>>>>>> abc6cdac7a29de62236bdd2970525b4e46b3bb39
