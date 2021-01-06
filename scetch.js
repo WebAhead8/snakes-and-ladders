@@ -3,7 +3,24 @@ var nextscreen = function(oldscreen, newscreen) {
 	document.getElementById(newscreen).style.display = "block";
 }
 
-var squares = new Array();
+var player1 = "Player 1"; 
+var player2 = "Player 2"; 
+
+   
+    
+         
+  
+    // Function to change the player name 
+    function editNames() { 
+        player1 = prompt("Change Player1 name"); 
+        player2 = prompt("Change player2 name"); 
+  
+        document.querySelector("p.Player1").innerHTML = player1; 
+        document.querySelector("p.Player2").innerHTML = player2; 
+    } 
+  
+    // canvas + creating grid
+    var squares = new Array();
 
         var canvas = document.getElementById("board");
         var context = canvas.getContext("2d");
@@ -53,6 +70,7 @@ var squares = new Array();
 
                     contextText.font = "15px tahoma";
                     contextText.fillStyle = "black";
+                    
                     contextText.fillText(columnNr, x, y + squareSize);
 
                     var x1, y1
@@ -80,32 +98,76 @@ var squares = new Array();
 
         function RenderSnakeAndLadders()
         {
+            
             var img = new Image();
             img.onload = function () 
             {
-            context.drawImage(img, 66, 23);
+            context.drawImage(img, 66, 10); // 99 - 84
             };
-            img.src = "Images/SnakeA.gif";
-
+            img.src = "img/snakes/ludoSnake5.png";
+            
             var img1 = new Image();
             img1.onload = function () 
             {
-            context.drawImage(img1, 66, 166);
+            context.drawImage(img1, 66, 175);
             };
-            img1.src = "Images/SnakeB.gif";
-
+            img1.src = "img/snakes/ludoSnake7.png"; // 59 - 44
+            
             var img2 = new Image();
-            img2.onload = function () {
-                context.drawImage(img2, 57, 166);
+            img2.onload = function () 
+            {
+            context.drawImage(img2, 275, 150);
             };
-            img2.src = "Images/LadderA.gif";
+            img2.src = "img/snakes/ludoSnake10.png"; // 67- 31
 
             var img3 = new Image();
             img3.onload = function () 
             {
-                context.drawImage(img3, 322, 366);
+            context.drawImage(img3, 262, 280);
             };
-            img3.src = "Images/LadderA.gif";            
+            img3.src = "img/snakes/ludoSnake12.png"; // 34 - 7
+
+            var img4 = new Image();
+            img4.onload = function () 
+            {
+            context.drawImage(img4, 72, 50);
+            };
+            img4.src = "img/snakes/ludoSnake13.png"; // 86 - 39
+
+            var img5 = new Image();
+            img5.onload = function () {
+                context.drawImage(img5, 50, 215);
+            };
+            img5.src = "img/ladders/ladder14.png"; // 22 - 44
+
+            var img6 = new Image();
+            img6.onload = function () 
+            {
+                context.drawImage(img6, 105, 90);
+            };
+            img6.src = "img/ladders/ladder15.png"; // 64 - 78 
+
+            var img7 = new Image();
+            img7.onload = function () 
+            {
+                context.drawImage(img7, 182, 270);
+            };
+            img7.src = "img/ladders/ladder2.png"; // 5- 35   
+
+            var img8 = new Image();
+            img8.onload = function () 
+            {
+                context.drawImage(img8, 350, 20);
+            };
+            img8.src = "img/ladders/ladder7.png";  // 72 - 92 
+
+            var img9 = new Image();
+            img9.onload = function () 
+            {
+                context.drawImage(img9, 269, 175);
+            };
+            img9.src = "img/ladders/ladder12.png";  // 48 - 54 
+            
         }
 
         function initGame() 
@@ -135,28 +197,56 @@ var squares = new Array();
             switch (_currentPos) 
             {
             //ladder
-            case 6:
-            _currentPos = 46;
+            case 5:
+            _currentPos = 35;
             break;
             //ladder
-            case 39:
-            _currentPos = 79;
+            case 22:
+            _currentPos = 44;
+            break;
+            //ladder
+            case 48:
+            _currentPos = 54;
+            break;
+            //ladder
+            case 64:
+            _currentPos = 78
+            break;
+            //ladder
+            case 72:
+            _currentPos = 92;
+            break;
+            //snake
+            case 34:
+            _currentPos = 7;
+            break;
+            //snake
+            case 59:
+            _currentPos = 44;
+            break;
+            //snake
+            case 67:
+            _currentPos = 31;
+            break;
+            //snake
+            case 86:
+            _currentPos = 39;
             break;
             //snake
             case 99:
-            _currentPos = 29;
-            break;
-            //snake
-            case 72:
-            _currentPos = 2;
+            _currentPos = 84;
             break;             
             }
 
             var coorintaes = squares[_currentPos];
+            var coorintaes1 = squares[_currentPos];
             coorintaes = coorintaes.split(',');
-
+            // console.log(_currentPos)
+            // console.log(coorintaes)
             context.fillRect(coorintaes[0], coorintaes[1], squareSize, squareSize);
-
+            // context.fillStyle = colorA;
+            // context.fillRect(coorintaes1[0], coorintaes1[1], squareSize, squareSize);
+            
             if (_currentPos == 100)
             {
                 alert("Congratulations, you have won the game :)");

@@ -111,7 +111,7 @@ body {
         height: 230px;
         background:url(../img/title_bg.png) no-repeat;
         line-height: normal;
-        text-align: center;
+        text-align: right;
         margin: auto;
         float: left;
         margin-left: -40px;
@@ -227,12 +227,13 @@ body {
     
     
     #instructions{
-        width:560px;
-        height: 300px;
+        width:500px;
+        height: 350px;
         background:url(../img/instr-bg.png) no-repeat;
-        margin:auto;
+        background-size: 500px 350px;
+        margin:auto 30px auto auto;
+        padding-top: 50px;
         
-        padding-top: 40px;
     }
     #instructions h2{
         padding-top: 20px;
@@ -242,7 +243,8 @@ body {
         text-transform: uppercase;
         letter-spacing: 1px;
         width: 280px;
-        margin: -90px auto;
+        margin:40px auto;
+
         /* padding: 10px; */  
         color: #fff;
     }
@@ -253,13 +255,15 @@ body {
     
     .inst_text {
         width: 480px;
-        margin:-50px auto;
+        margin:-50px 0px -50px 25px ;
+        margin-left: ;
         max-width: 100%;
         padding-left: 25px;
         color: #fff;
         z-index: 99;
-        position: relative;
+        /* position: relative; */
         padding-top: 20px;
+
 
     }
     
@@ -407,6 +411,18 @@ body {
         text-align: center;
     }
 
+    .players {
+       width: 20px;
+       height: 40px;
+
+    }
+    .dice{
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+        margin-bottom: -10%
+
+    }
     .screen3_footer {
         width: 450px;
         float: right;
