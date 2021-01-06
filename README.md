@@ -14,11 +14,11 @@ for more info [](https://en.wikipedia.org/wiki/Snakes_and_ladders)
 * Jihad Banna
 
 ## Project info:
-This is a snake and ladders games created with html, css, js.
-The repo includes index.html, style.css, scetch.js files.
-The html webpahe consists of 4 screens. 
+* This is a snake and ladders games created with html, css, js.
+* The repo includes index.html, style.css, scetch.js files.
+* The html webpahe consists of 4 screens. 
 
-This game can be played with one player or multiplayers. 
-This is still a beta-version of the game. 
+* This game can be played with one player or multiplayers. 
+* This game is still a beta-version of the game. 
 
 ## Enjoy it..
