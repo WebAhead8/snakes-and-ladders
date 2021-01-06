@@ -567,6 +567,15 @@ body {
         text-align: center;
     }
 
+    #board{
+        width:420px;
+        height:420px;
+        position: relative;
+        margin: -200px;
+        margin-left: 200px;
+    
+
+    }
     .screen4_footer {
         width: 450px;
         float: right;
@@ -655,22 +664,4 @@ body {
 
 
 
-    .table {
-        width: 100%;
-        max-width: 100%;
-        border-spacing: 0;
-        display: table;
-    }
-
-    .table>tbody>tr>td {
-        width: 54px;
-        height: 52px;
-        vertical-align: top;
-        border: 1px solid #000;
-        line-height: 50px;
-        text-align: center;
-        font-size: 20px;
-        font-family: calibri;
-        background: #fff;
-        font-weight: bold;
-        }
+    
