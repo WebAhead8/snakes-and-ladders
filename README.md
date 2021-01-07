@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-# snakes-and-ladders
-click here to visit the game https://github.com/WebAhead8/snakes-and-ladders
-=======
+
 # Snakes & Ladders
 [click here to visit the games website]( https://webahead8.github.io/snakes-and-ladders)
 
