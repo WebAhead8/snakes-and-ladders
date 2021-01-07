@@ -22,5 +22,4 @@ The game is a simple race based on sheer luck, and it is popular with young chil
 * This game can be played with one player or multiplayers. 
 * This game is still a beta-version of the game. 
 
-## Enjoy it..
->>>>>>> a167b926b53ad7e8449c2a7f232e410734525fc9
+
