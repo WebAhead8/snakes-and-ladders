@@ -1,10 +1,15 @@
-var nextscreen = function(oldscreen, newscreen) {
-	document.getElementById(oldscreen).style.display = "none";
-	document.getElementById(newscreen).style.display = "block";
-}
-
 var player1 = "Player 1"; 
 var player2 = "Player 2"; 
+
+var nextscreen = function(oldscreen, newscreen) {
+	document.getElementById(oldscreen).style.display = "none";
+    document.getElementById(newscreen).style.display = "block";
+    document.getElementById("Player1").innerHTML = player1; 
+    console.log(player1)
+    console.log(document.querySelector("p.Player1"))
+    document.getElementById("Player2").innerHTML = player2; 
+}
+
 
    
     
@@ -190,7 +195,8 @@ var player2 = "Player 2";
         function nextMove() 
         {
             var newMove = GenerateRandomNumber(6);
-            alert("You got : " + newMove);
+            // alert("You got : " + newMove);
+            document.querySelector(".img1").setAttribute("src", "img/dice" + newMove + ".png"); //ji-23
 
             _currentPos = _currentPos + newMove;
             var audio = new Audio('audio/Switch3.mp3');

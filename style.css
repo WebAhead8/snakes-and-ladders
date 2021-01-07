@@ -432,18 +432,19 @@ body {
         z-index: 5;
     }
     .Player1 {
-        background-color: rgb(255,255,255,0.938);
+        background-color: #c49464;
         font-family: "kraashregular" ;
-        color: darkblue;
+        color:white;
         text-emphasis: bold;
         text-shadow: chartreuse;
         text-align: center;
         min-width: 100px;
     }
     .Player2 {
-        background-color: rgba(255, 255, 255, 0.938);
+        background-color: #c49464;
+        
         font-family: "kraashregular" ;
-        color: darkblue;
+        color: white;
         text-emphasis: bold;
         text-shadow: chartreuse;
         text-align: center;
@@ -597,19 +598,20 @@ body {
         justify-content: space-between;
     }
     
-    .Player1 {
-        background-color: rgb(255,255,255,0.938);
+    #Player1 {
+        background-color:#c49464;        ;
         font-family: "kraashregular" ;
-        color: darkblue;
+        color: white;
         text-emphasis: bold;
         text-shadow: chartreuse;
         text-align: center;
         min-width: 100px;
     }
-    .Player2 {
-        background-color: rgba(255, 255, 255, 0.938);
+    #Player2 {
+        background-color: #c49464;
+        ;
         font-family: "kraashregular" ;
-        color: darkblue;
+        color: white;
         text-emphasis: bold;
         text-shadow: chartreuse;
         text-align: center;
